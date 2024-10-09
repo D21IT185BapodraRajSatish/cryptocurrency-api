@@ -15,7 +15,7 @@ connectDB();
 app.use(express.json());
 
 // Use routes with the '/api' prefix
-app.use('/api', cryptoRoutes);
+app.use('/', cryptoRoutes);
 
 // Start the server
 const PORT = process.env.PORT || 3000;
